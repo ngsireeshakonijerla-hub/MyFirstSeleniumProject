@@ -44,7 +44,7 @@ public class LoginTest extends BaseTest {
 	//@Test(dataProvider = "LoginData2")
 	//@Test
 	//@Parameters({"username","password"})
-	@Test
+	@Test(dataProvider = "LoginData")
 	public void Login(String username, String password) {
 
 		Log.info("Staring login test....");
