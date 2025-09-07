@@ -42,8 +42,9 @@ public class LoginTest extends BaseTest {
 	}
 	
 	//@Test(dataProvider = "LoginData2")
+	//@Test
+	//@Parameters({"username","password"})
 	@Test
-	@Parameters({"username","password"})
 	public void Login(String username, String password) {
 
 		Log.info("Staring login test....");
@@ -54,11 +55,11 @@ public class LoginTest extends BaseTest {
 
 		Log.info("Adding credentials....");
 		test.info("Adding Credentials...");
-//		login.username("admin@yourstore.com");
-//		login.password("admin");
+		login.username("admin@yourstore.com");
+		login.password("admin");
 		
-		login.username(username);
-		login.password(password);
+//		login.username(username);
+//		login.password(password);
 		
 		test.info("Clicking on Login button...");
 		login.login();
